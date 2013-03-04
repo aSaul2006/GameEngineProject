@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{10519094-1010-41cf-9a29-6d8f441cf1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render">
+      <UniqueIdentifier>{3463665a-fa99-49c8-aa57-ae9d0394011b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tiny">
+      <UniqueIdentifier>{3949cdb7-8879-4954-b40b-1834325921ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{599e402d-2dbc-48cf-99f8-efce80f25178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{49b3adaf-8500-4a94-9dce-4e87ce07e3bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tiny">
+      <UniqueIdentifier>{4ac6953c-47d8-49bb-a787-f2e7e2f61a3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Render">
+      <UniqueIdentifier>{5c258a50-c6c2-4e53-85f8-a695c2e1877f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ResourceManager">
+      <UniqueIdentifier>{3136e42a-6944-41f1-9d79-a2dd4eaee487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ResourceManager">
+      <UniqueIdentifier>{c5f9753b-f330-4609-8f4d-ac3037c6d8ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI">
+      <UniqueIdentifier>{bb28101b-a0a3-4323-ad7d-df6d234c6143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\Bounds Detection">
+      <UniqueIdentifier>{1505226f-82e7-4b59-aa46-e59e40b5b620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\State, Message, and Entity Systems">
+      <UniqueIdentifier>{0067d67e-1da2-4885-9ca9-1ed181addca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\Steering Behaviors">
+      <UniqueIdentifier>{2a2f8da8-8af8-4958-ac3c-b66ef92fda12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\Weighted Movement">
+      <UniqueIdentifier>{c4887a42-6ec2-43b1-b3a7-5d8a119902b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\Steering Behaviors\misc">
+      <UniqueIdentifier>{c3908c91-cb6e-4f04-af7b-9a918b15356d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\Steering Behaviors\2D">
+      <UniqueIdentifier>{a7bdef0b-f4f8-4478-8e48-22e5526ab012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main\AI\State, Message, and Entity Systems\Source">
+      <UniqueIdentifier>{3228bb0e-a590-4cd1-b472-564a1267a49a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Audio\tiny\tinystr.h">
+      <Filter>Header Files\tiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\tiny\tinyxml.h">
+      <Filter>Header Files\tiny</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\AllocMeshHierarchy.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\AnimatedModel.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\Camera.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\d3dApp.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\d3dUtil.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\DirectInput.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\EngineMain.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\GfxStats.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\Lighting.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\Model.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\RenderingInterface.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\resource.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\Shaders.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\stdafx.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Render\Vertex.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInterface.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="StateManager.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldObject.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\AudioManager.h">
+      <Filter>Header Files\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\ResourceManager.h">
+      <Filter>Header Files\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\Sound.h">
+      <Filter>Header Files\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\cTextureResource.h">
+      <Filter>Header Files\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Box2D.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\FunctionTemplates.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Geometry.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger_LimitedLifetime.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger_Respawning.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\TriggerRegion.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Vector2D.h">
+      <Filter>Header Files\Main\AI\Bounds Detection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\Entity.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\EntityGenerator.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\EntityManager.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\MessageSystem.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\State.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\StateMachine.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\Timer.h">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\C2DMatrix.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\InvertedAABBox2D.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\Transformations.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\Wall2D.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\CellSpacePartition.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\Cgdi.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\iniFileLoaderBase.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\Stream_Utility_Functions.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\utils.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\ParamLoader.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\Path.h">
+      <Filter>Header Files\Main\AI\Steering Behaviors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GSP420MainCore.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInterface.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="StateManager.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldObject.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\tiny\tinystr.cpp">
+      <Filter>Source Files\tiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\tiny\tinyxml.cpp">
+      <Filter>Source Files\tiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\tiny\tinyxmlerror.cpp">
+      <Filter>Source Files\tiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\tiny\tinyxmlparser.cpp">
+      <Filter>Source Files\tiny</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\AllocMeshHierarchy.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\AnimatedModel.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\Camera.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\d3dApp.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\d3dUtil.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\DirectInput.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\EngineMain.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\GfxStats.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\Lighting.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\Model.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\RenderingInterface.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\Shaders.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Render\Vertex.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\AudioManager.cpp">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\ResourceManager.cpp">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\cTextureResource.cpp">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\Sound.cpp">
+      <Filter>Source Files\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Entity.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\EntityGenerator.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\EntityManager.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Main.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\MessageSystem.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\State.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Timer.cpp">
+      <Filter>Header Files\Main\AI\State, Message, and Entity Systems\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\misc\Cgdi.cpp">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\misc\iniFileLoaderBase.cpp">
+      <Filter>Header Files\Main\AI\Steering Behaviors\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\ParamLoader.cpp">
+      <Filter>Header Files\Main\AI\Steering Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\Path.cpp">
+      <Filter>Header Files\Main\AI\Steering Behaviors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Render\fx\lighting.fx">
+      <Filter>Resource Files\Render</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Render\fx\pointlight.fx">
+      <Filter>Resource Files\Render</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Render\fx\vblend2.fx">
+      <Filter>Resource Files\Render</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Render\Render.rc">
+      <Filter>Resource Files\Render</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

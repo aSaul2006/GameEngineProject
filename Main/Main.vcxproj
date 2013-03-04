@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C90D7E1-4271-4142-B4BC-8B4792BD7ABF}</ProjectGuid>
+    <RootNamespace>Main</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath);</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../PhysicsEngine/physicsengine/;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dinput8.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>2.0</ShaderModel>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Box2D.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\FunctionTemplates.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Geometry.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\TriggerRegion.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger_LimitedLifetime.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Trigger_Respawning.h" />
+    <ClInclude Include="..\AICore_Files\Bounds Detection\Vector2D.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\Entity.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\EntityGenerator.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\EntityManager.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\MessageSystem.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\State.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\StateMachine.h" />
+    <ClInclude Include="..\AICore_Files\State, Message, and Entity Systems\Timer.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\C2DMatrix.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\InvertedAABBox2D.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\Transformations.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\2D\Wall2D.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\CellSpacePartition.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\Cgdi.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\iniFileLoaderBase.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\Stream_Utility_Functions.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\misc\utils.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\ParamLoader.h" />
+    <ClInclude Include="..\AICore_Files\Steering Behaviors\Path.h" />
+    <ClInclude Include="..\Audio\AudioManager.h" />
+    <ClInclude Include="..\Audio\cTextureResource.h" />
+    <ClInclude Include="..\Audio\ResourceManager.h" />
+    <ClInclude Include="..\Audio\Sound.h" />
+    <ClInclude Include="..\Audio\tiny\tinystr.h" />
+    <ClInclude Include="..\Audio\tiny\tinyxml.h" />
+    <ClInclude Include="..\Render\AllocMeshHierarchy.h" />
+    <ClInclude Include="..\Render\AnimatedModel.h" />
+    <ClInclude Include="..\Render\Camera.h" />
+    <ClInclude Include="..\Render\d3dApp.h" />
+    <ClInclude Include="..\Render\d3dUtil.h" />
+    <ClInclude Include="..\Render\DirectInput.h" />
+    <ClInclude Include="..\Render\EngineMain.h" />
+    <ClInclude Include="..\Render\GfxStats.h" />
+    <ClInclude Include="..\Render\Lighting.h" />
+    <ClInclude Include="..\Render\Model.h" />
+    <ClInclude Include="..\Render\RenderingInterface.h" />
+    <ClInclude Include="..\Render\resource.h" />
+    <ClInclude Include="..\Render\Shaders.h" />
+    <ClInclude Include="..\Render\stdafx.h" />
+    <ClInclude Include="..\Render\Vertex.h" />
+    <ClInclude Include="MainInterface.h" />
+    <ClInclude Include="StateManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WorldObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Entity.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\EntityGenerator.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\EntityManager.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Main.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\MessageSystem.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\State.cpp" />
+    <ClCompile Include="..\AICore_Files\State, Message, and Entity Systems\Timer.cpp" />
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\misc\Cgdi.cpp" />
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\misc\iniFileLoaderBase.cpp" />
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\ParamLoader.cpp" />
+    <ClCompile Include="..\AICore_Files\Steering Behaviors\Path.cpp" />
+    <ClCompile Include="..\Audio\AudioManager.cpp" />
+    <ClCompile Include="..\Audio\cTextureResource.cpp" />
+    <ClCompile Include="..\Audio\ResourceManager.cpp" />
+    <ClCompile Include="..\Audio\Sound.cpp" />
+    <ClCompile Include="..\Audio\tiny\tinystr.cpp" />
+    <ClCompile Include="..\Audio\tiny\tinyxml.cpp" />
+    <ClCompile Include="..\Audio\tiny\tinyxmlerror.cpp" />
+    <ClCompile Include="..\Audio\tiny\tinyxmlparser.cpp" />
+    <ClCompile Include="..\Render\AllocMeshHierarchy.cpp" />
+    <ClCompile Include="..\Render\AnimatedModel.cpp" />
+    <ClCompile Include="..\Render\Camera.cpp" />
+    <ClCompile Include="..\Render\d3dApp.cpp" />
+    <ClCompile Include="..\Render\d3dUtil.cpp" />
+    <ClCompile Include="..\Render\DirectInput.cpp" />
+    <ClCompile Include="..\Render\EngineMain.cpp" />
+    <ClCompile Include="..\Render\GfxStats.cpp" />
+    <ClCompile Include="..\Render\Lighting.cpp" />
+    <ClCompile Include="..\Render\Model.cpp" />
+    <ClCompile Include="..\Render\RenderingInterface.cpp" />
+    <ClCompile Include="..\Render\Shaders.cpp" />
+    <ClCompile Include="..\Render\Vertex.cpp" />
+    <ClCompile Include="GSP420MainCore.cpp" />
+    <ClCompile Include="MainInterface.cpp" />
+    <ClCompile Include="StateManager.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="WorldObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Render\fx\lighting.fx">
+      <FileType>Document</FileType>
+    </FxCompile>
+    <FxCompile Include="..\Render\fx\pointlight.fx">
+      <FileType>Document</FileType>
+    </FxCompile>
+    <FxCompile Include="..\Render\fx\vblend2.fx">
+      <FileType>Document</FileType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Render\Render.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Physics\PhysicsEngine\PhysicsEngine.vcxproj">
+      <Project>{840893dd-7947-438c-81f1-6b9be99d67e6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

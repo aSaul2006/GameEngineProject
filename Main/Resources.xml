@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!--List of resources for graphic, texture and audio assets  ----------------------------->
+<!---------------------------------------------------------------------------------------->
+<!--We will separate different audio types between comments ---------------------------->
+<!-----------------------------------------AUDIO ASSETS -------------------------------->
+<!---------------------------------------------------------------------------------------->
+<! -- Audio Assets begin with 1 followed by next number for example first audio asset 100 -->
+<resources>
+	<resource UID="100" type="audio" filename="_misc\barca_assets\ballHit.mp3" scenescope = "1" audio_type="sfx"></resource>
+	<resource UID="101" type="audio" filename="_misc\barca_assets\creditsDrumLoop.mp3" scenescope = "2" audio_type="bgm"></resource>
+	<resource UID="102" type="audio" filename="_misc\barca_assets\dummyDestroy.mp3" scenescope = "1" audio_type="sfx"></resource>
+	<resource UID="103" type="audio" filename="_misc\barca_assets\gameMusic.mp3" scenescope = "0" audio_type="bgm"></resource>
+	<resource UID="104" type="audio" filename="_misc\barca_assets\menuSelect.wav" scenescope = "0" audio_type="sfx"></resource>
+	<resource UID="105" type="audio" filename="_misc\barca_assets\selectionConfirmed.wav" scenescope = "0" audio_type="sfx"></resource>
+
+	 
+	<!---------------------------------------------------------------------------------------->
+	<!-----------------------------------------Graphics/Meshes -------------------------------->
+	<!---------------------------------------------------------------------------------------->
+	<! -- 3D Assets begin with 2 followed by next number for example first 3D asset 200 -->
+	<resource UID="200" type ="graphic" filename ="_misc\barca_assets\ball.X" scenescope = "1"></resource>
+	<resource UID="201" type ="graphic" filename ="_misc\barca_assets\Dummy.X" scenescope = "1"></resource>
+	<resource UID="202" type ="graphic" filename ="_misc\barca_assets\Butch.X" scenescope = "1"></resource>
+	
+	<!---------------------------------------------------------------------------------------->
+	<!-----------------------------------------TEXTURE/IMAGES -------------------------------->
+	<!---------------------------------------------------------------------------------------->
+	<! -- Texture/image Assets begin with 3 followed by next number for example first texture asset 300 -->
+	
+	<resource UID="300" type="texture" filename="_misc\barca_assets\dummyDie.gif" scenescope="1"></resource>
+	<resource UID="301" type="texture" filename="_misc\barca_assets\dummyThrow.gif" scenescope="1"></resource>
+	<resource UID="302" type="texture" filename="_misc\barca_assets\dummyCutOut.jpg" scenescope="1"></resource>
+	<resource UID="303" type="texture" filename="_misc\barca_assets\dummysprites.png" scenescope="1"></resource>
+	<resource UID="304" type="texture" filename="_misc\barca_assets\dummysprites2.png" scenescope="1"></resource>
+	<resource UID="305" type="texture" filename="_misc\barca_assets\GameBackgroundCombined.png" scenescope="1"></resource>
+	<resource UID="306" type="texture" filename="_misc\barca_assets\GameBackgroundForeground.png" scenescope="1"></resource>
+	<resource UID="307" type="texture" filename="_misc\barca_assets\GameBackgroundMountains.png" scenescope="1"></resource>
+	<resource UID="308" type="texture" filename="_misc\barca_assets\GameBackgroundSky.png" scenescope="1"></resource>
+	<resource UID="309" type="texture" filename="_misc\barca_assets\mBackground.png" scenescope="0"></resource>
+	<resource UID="310" type="texture" filename="_misc\barca_assets\bar.png" scenescope="1"></resource>
+	<resource UID="311" type="texture" filename="_misc\barca_assets\credits.png" scenescope="2"></resource>
+	
+	
+</resources>
